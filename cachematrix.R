@@ -35,7 +35,7 @@ cacheSolve <- function(x, ...) {
     message("getting cached data")
     return(inverted.matrix)
   }
-  ## inverse of matrix is not cached yet. Create the inverse and sets it to the input x
+  ## inverse of matrix is not cached yet. Create the inverse and set it to the input x
   source.matrix <- x$get()
   inverted.matrix <- solve(source.matrix, ...)
   x$setInverse(inverted.matrix)
